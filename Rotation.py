@@ -26,12 +26,12 @@ def rotate(matrix):  #create a function which allows user to rotate the image
         for i in range(len(matrix)):
             for j in range(i):
                 matrix[i][j],matrix[j][i] = matrix[j][i],matrix[i][j] #turn the image another 90 degrees 
-    if x==('90'):
+    elif x==('90'):
         matrix=matrix[::-1]
         for i in range(len(matrix)):  #if we are rotating the image 90 degrees, run this for loop one time.
             for j in range(i):
                matrix[i][j], matrix[j][i]=matrix[j][i],matrix[i][j]
-    if x==('180'):
+    elif x==('180'):
         matrix=matrix[::-1]
         for i in range(len(matrix)):   #if we are rotating the image 180 degrees, run this for loop two times.
             for j in range(i):
@@ -42,7 +42,7 @@ def rotate(matrix):  #create a function which allows user to rotate the image
             for j in range(i):
                matrix[i][j],matrix[j][i] = matrix[j][i],matrix[i][j] 
                
-    if x==('270'):
+    elif x==('270'):
         matrix=matrix[::-1]
         for i in range(len(matrix)): #if we are rotating the image 270 degrees, run this for loop three times.
             for j in range(i):
